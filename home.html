@@ -12,8 +12,8 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-2">
-                <div class="stats">
+              <div class="artboard artboard-demo phone-1">
+                <div class="stats mt-5 h-[500px]">
                     <div class="stat flex ">
                         <img src="payoo.png" alt="" srcset="" style="height: 40px;">
                         <div class="content ">
@@ -33,7 +33,7 @@
                   <div class="divider"></div>
 
                   <!-- add money form -->
-                  <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl">
+                  <div class="hidden card bg-base-100  max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -55,6 +55,32 @@
                       </div>
                     </form>
                   </div>
+                  <!-- add money form end -->
+
+                  <!-- cash out form start -->
+                  <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Enter Amount</span>
+                        </label>
+                        <input type="text" placeholder="Enter amount for cashout" id="cashout-input" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">PIN</span>
+                        </label>
+                        <input type="password" placeholder="Enter your 4 digit pin" id="cash-pin" class="input input-bordered" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary" id="btn-cashOut">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+<!-- cash out form end -->
                 </div>
               </div>
             </div>
@@ -63,5 +89,6 @@
 
 
     <script src="js/home.js"></script>
+    <script src="js/cash.js"></script>
 </body>
 </html>
