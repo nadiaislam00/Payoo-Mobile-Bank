@@ -7,7 +7,7 @@ const phoneNumber = document.getElementById('phone-number').value;
 const pinNumber = document.getElementById('pin-number').value;
 console.log(phoneNumber, pinNumber);
 
-if(phoneNumber==='5' && pinNumber==='134'){
+if(phoneNumber==='123' && pinNumber==='1234'){
     console.log('You are logged In');
     window.location.href= './home.html';
 }
