@@ -15,8 +15,9 @@ document.getElementById('btn-cashOut').addEventListener('click', function(event)
     const balanceNumber = parseFloat(balance);
         const totalBalance = balanceNumber - cashoutNumber;
         document.getElementById('balance').innerText = totalBalance;
-
-        alert('Cash Out Success!!')
+alert('CashOut Successful!!');
+  
+        
     }
     else{
         alert('Wrong PIN number!!');
